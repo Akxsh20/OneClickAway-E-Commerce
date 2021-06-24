@@ -3,11 +3,11 @@ JavaFx project, Basic e-Commerce standalone Application
 
 The following configurations are needed:
 
-IntelliJ idea
+1.IntelliJ idea
 
-Scene Builder
+2.Scene Builder
 
-JavaFX software
+3.JavaFX software
 
 # Loading Screen
 
