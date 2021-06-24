@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="splashPane" prefHeight="446.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SplashScreenController">
+   <children>
+      <ImageView fitHeight="472.0" fitWidth="672.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back3.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="203.0" layoutY="-12.0" prefHeight="140.0" prefWidth="266.0" text="OCA" textFill="#030000">
+         <font>
+            <Font name="Goudy Old Style" size="120.0" />
+         </font>
+      </Label>
+      <Label layoutX="263.0" layoutY="392.0" prefHeight="18.0" prefWidth="138.0" text="Your Digital store front" textFill="#fffcfc">
+         <font>
+            <Font name="Gill Sans MT" size="14.0" />
+         </font>
+      </Label>
+      <Text fill="#fffdfd" layoutX="268.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A style for every story">
+         <font>
+            <Font name="Gill Sans MT" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

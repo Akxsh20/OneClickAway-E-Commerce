@@ -1,0 +1,29 @@
+
+
+.CancelButton:hover{
+ -fx-border-radius:20;
+ -fx-border-color:#7b6a46;
+}
+.CancelButton:pressed{
+}
+
+
+.LoginButton:hover{
+ -fx-border-radius:20;
+ -fx-border-color:#7b6a46;
+}
+.LoginButton:pressed{
+}
+
+.SignupButton:hover{
+ -fx-border-radius:20;
+ -fx-border-color:#7b6a46;
+}
+
+.pane3{
+-fx-background-image:url('back2.jpg');
+-fx-background-size:cover;
+}
+.text-field{
+-fx-prompt-text-fill: #000000;
+}

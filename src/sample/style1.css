@@ -1,0 +1,22 @@
+.SignUp:hover{
+ -fx-border-radius:20;
+ -fx-border-color:#7b6a46;
+}
+
+.Cancel:hover{
+ -fx-border-radius:20;
+ -fx-border-color:#7b6a46;
+
+}
+.button:hover{
+-fx-border-radius:20;
+-fx-border-color:#000000;
+}
+
+.mouse-moved: hover{
+ -fx-background-color: #E4E4E4;
+}
+
+.shadow{
+ -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.2), 10, 0 , 0 , 10);
+}

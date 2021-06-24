@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="367.0" prefWidth="264.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.WomensPageController">
+   <children>
+      <ImageView fx:id="ProdImage" fitHeight="150.0" fitWidth="221.0" pickOnBounds="true" preserveRatio="true">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+         <image>
+            <Image url="@../Women/Watches/Rolex.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER_RIGHT" prefHeight="188.0" prefWidth="259.0">
+         <children>
+            <Label fx:id="ProdDetails" alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="259.0" text="Watches">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="ProdBrand" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="259.0" text="By Gucci">
+               <font>
+                  <Font name="Comic Sans MS" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="priceLabel" alignment="CENTER" layoutX="10.0" layoutY="45.0" prefHeight="36.0" prefWidth="264.0" text="800">
+               <font>
+                  <Font name="Comic Sans MS" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="RupeeSymbol" fitHeight="21.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image2/rupeeSymbol.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <ImageView fitHeight="42.0" fitWidth="281.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image2/star5.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="AddToCartButton" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#AddtocartAction" prefHeight="35.0" prefWidth="46.0" style="-fx-background-color: white;" stylesheets="@style1.css">
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image2/icons8-add-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</VBox>

@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane fx:id="ShopPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="1235.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ShopController">
+   <children>
+      <AnchorPane fx:id="Accessories" prefHeight="670.0" prefWidth="370.0" style="-fx-background-color: linear-gradient(to bottom, #ebc2a9, #ecbfa3, #ecbb9d, #edb896, #edb590, #edb590, #edb590, #edb590, #edb896, #ecbb9d, #ecbfa3, #ebc2a9);" stylesheets="@style1.css">
+         <children>
+            <Button fx:id="MenButton" layoutX="97.0" layoutY="108.0" mnemonicParsing="false" onAction="#PaneAction" prefHeight="61.0" prefWidth="128.0" style="-fx-background-color: transparent;" text="Men" textFill="#fffefe" AnchorPane.bottomAnchor="501.0" AnchorPane.leftAnchor="97.0" AnchorPane.rightAnchor="145.0" AnchorPane.topAnchor="108.0">
+               <font>
+                  <Font name="Goudy Old Style" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image2/icons8-user-male-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="WomenButton" layoutX="101.0" layoutY="170.0" mnemonicParsing="false" onAction="#PaneAction" prefHeight="55.0" prefWidth="154.0" style="-fx-background-color: transparent;" text="Women" textFill="#f4f4f4" AnchorPane.bottomAnchor="445.2" AnchorPane.leftAnchor="101.0" AnchorPane.rightAnchor="115.0">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image2/icons8-female-user-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Goudy Old Style" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="KidsButton" layoutX="84.0" layoutY="225.0" mnemonicParsing="false" onAction="#PaneAction" prefHeight="60.0" prefWidth="154.0" style="-fx-background-color: transparent;" text="Kids" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image2/icons8-baby-face-96.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Goudy Old Style" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="HomeLivingButton" layoutX="90.0" layoutY="279.0" mnemonicParsing="false" onAction="#PaneAction" prefHeight="62.0" prefWidth="232.0" style="-fx-background-color: transparent;" text="Home&amp;Living" textFill="#fff4f4">
+               <graphic>
+                  <ImageView fitHeight="46.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image2/icons8-living-room-96.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Goudy Old Style" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="AccesoriesButton" layoutX="90.0" layoutY="341.0" mnemonicParsing="false" onAction="#PaneAction" prefHeight="60.0" prefWidth="199.0" style="-fx-background-color: transparent;" text="Accessories" textFill="#fffefe">
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image2/icons8-epilepsy-smart-watch-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Goudy Old Style" size="24.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="-1.0" layoutY="-2.0" prefHeight="670.0" prefWidth="74.0">
+               <children>
+                  <Button layoutX="12.0" layoutY="60.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="38.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true" styleClass="button">
+                           <image>
+                              <Image url="@../image2/icons8-search-96.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="queryButton" layoutX="5.0" layoutY="163.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="55.0" prefWidth="52.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="48.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image2/icons8-talk-96.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="ShoppingCartButton" layoutX="7.0" layoutY="548.0" mnemonicParsing="false" onAction="#addtocartButtonAction" prefHeight="52.0" prefWidth="60.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true" styleClass="button">
+                           <image>
+                              <Image url="@../image2/icons8-shopping-bag-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="questionmarkButton" layoutX="7.0" layoutY="613.0" mnemonicParsing="false" onAction="#QuestionButtonAction" prefHeight="42.0" prefWidth="60.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true" styleClass="button">
+                           <image>
+                              <Image url="@../image2/icons8-question-mark-96.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Button fx:id="CancelButton" layoutX="263.0" layoutY="630.0" mnemonicParsing="false" onAction="#CancelButtonOnAction" style="-fx-background-color: transparent;" text="Sign Out" />
+            <AnchorPane fx:id="AboutProjPane" layoutX="85.0" layoutY="421.0" opacity="0.69" prefHeight="200.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 20;" visible="false">
+               <children>
+                  <Label layoutX="88.0" layoutY="14.0" text="About the Project" />
+                  <Label layoutX="31.0" layoutY="64.0" text="Sowftware used : JavaFX" />
+                  <Label layoutX="31.0" layoutY="82.0" text="Database : MySql WorkBench" />
+                  <Label layoutX="31.0" layoutY="100.0" text="IDE : Intellij" />
+                  <Label layoutX="31.0" layoutY="118.0" />
+                  <Label layoutX="31.0" layoutY="118.0" text="Layout Tool : SceneBuilder" />
+                  <Label layoutX="31.0" layoutY="136.0" text="Animation/Style : CSS" />
+                  <Label layoutX="31.0" layoutY="154.0" prefHeight="18.0" prefWidth="156.0" text="Extra Modules : javafx.web" />
+                  <Button fx:id="Goback" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#QuestionButtonAction" prefHeight="42.0" prefWidth="50.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image2/icons8-back-arrow-96.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Button fx:id="Sale" layoutX="90.0" layoutY="52.0" mnemonicParsing="false" onAction="#PaneAction" prefHeight="56.0" prefWidth="213.0" style="-fx-background-color: transparent;" text="Summer Sale" textFill="WHITE">
+               <font>
+                  <Font name="Goudy Old Style" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image2/icons8-offer-hot-price-96.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label fx:id="ConfirmationLabel" layoutX="145.0" layoutY="412.0" prefHeight="18.0" prefWidth="105.0" text="Item Added to Cart" textFill="#2618c1" visible="false" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="query_pane" prefHeight="675.0" prefWidth="1235.0" style="-fx-background-color: linear-gradient(to right bottom, #45aacb, #009cd8, #008ae3, #0075e7, #4059e0);" visible="false">
+         <children>
+            <AnchorPane opacity="0.75" prefHeight="669.0" prefWidth="410.0" style="-fx-background-color: #ffff;" stylesheets="@style1.css">
+               <children>
+                  <Button fx:id="buttonBack" layoutX="43.0" layoutY="128.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="42.0" prefWidth="62.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image2/icons8-back-52.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="161.0" layoutY="128.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="154.0" style="-fx-background-color: transparent;" text="Q n A">
+                     <graphic>
+                        <ImageView fitHeight="44.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image2/icons8-faq-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Goudy Old Style" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="FeedBackButton" layoutX="174.0" layoutY="216.0" mnemonicParsing="false" onAction="#FeedBackButtonAction" prefHeight="60.0" prefWidth="154.0" style="-fx-background-color: transparent;" text="FeedBack">
+                     <graphic>
+                        <ImageView fitHeight="44.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image2/icons8-feedback-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Goudy Old Style" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="410.0" prefHeight="670.0" prefWidth="700.0">
+               <children>
+                  <WebView fx:id="webView" prefHeight="675.0" prefWidth="827.0" />
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="MenPane" layoutX="370.0" prefHeight="670.0" prefWidth="866.0" visible="false">
+         <children>
+            <Text layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="    Mens Wear" wrappingWidth="866.4">
+               <font>
+                  <Font name="Playbill" size="24.0" />
+               </font></Text>
+            <VBox fx:id="MenVbox" layoutX="8.0" layoutY="29.0" prefHeight="634.0" prefWidth="850.0">
+               <children>
+                  <TabPane fx:id="MensTab" prefHeight="634.0" prefWidth="850.0" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab text="Hoodies">
+                           <content>
+                              <AnchorPane fx:id="HoodiePane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="608.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="HoodieGridM" prefHeight="18.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Tees">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="606.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="TeesGridM" prefHeight="15.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Jackets">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="606.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="JacketsGridM" prefHeight="15.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Bottoms">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="607.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="BottomGridM" prefHeight="18.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="shoes">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="608.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="ShoesGridM" prefHeight="18.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Watches">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="608.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="WatchGridM" prefHeight="18.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="WomensPane" layoutX="370.0" prefHeight="670.0" prefWidth="866.0" visible="false">
+         <children>
+            <Label layoutY="-2.0" prefHeight="31.0" prefWidth="866.0" text=" Womens section">
+               <font>
+                  <Font size="21.0" />
+               </font></Label>
+            <VBox fx:id="WoMenVbox" layoutX="8.0" layoutY="29.0" prefHeight="634.0" prefWidth="850.0">
+               <children>
+                  <TabPane fx:id="WomMensTab" prefHeight="634.0" prefWidth="850.0" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab text="Hoodies">
+                           <content>
+                              <AnchorPane fx:id="HoodiePane1" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="608.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="HoodieGridW" prefHeight="18.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Tees">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="606.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="TeesGridW" prefHeight="15.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Jackets">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="606.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="JacketGridW" prefHeight="15.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Bottoms">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="607.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="BottomsGridW" prefHeight="18.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="shoes">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="608.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="ShoesGridW" prefHeight="18.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Watches">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="608.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="WatchGridW" prefHeight="18.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Bags">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="608.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="BagGridW" prefHeight="18.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="MainPane" layoutX="370.0" prefHeight="670.0" prefWidth="866.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="172.0" prefHeight="18.0" prefWidth="522.0" text="Due to COVID-19 restrictions our deliveries have been impacted, we regret the Inconvinience" textFill="#f20000">
+               <font>
+                  <Font name="Goudy Old Style" size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutY="17.0" prefHeight="4.0" prefWidth="866.0" />
+            <VBox fx:id="Clothebox" layoutY="21.0" prefHeight="649.0" prefWidth="866.0" style="-fx-background-color: white;">
+               <children>
+                  <Label alignment="CENTER" prefHeight="27.0" prefWidth="162.0" text="Recently Added">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="16.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane prefHeight="214.0" prefWidth="871.0">
+                     <content>
+                        <HBox fx:id="OfferLayout" alignment="CENTER_LEFT" prefHeight="197.0" prefWidth="1300.0" spacing="20.0" style="-fx-background-color: white;" />
+                     </content>
+                  </ScrollPane>
+                  <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="27.0" prefWidth="157.0" text="Recommended For You">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="16.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane prefHeight="385.0" prefWidth="866.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+                     <content>
+                        <GridPane fx:id="ClotheContainer" prefHeight="10.0" prefWidth="0.0">
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+      <AnchorPane fx:id="kidsPane" layoutX="370.0" prefHeight="671.0" prefWidth="866.0" visible="false">
+         <children>
+            <Text layoutX="14.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KIDS">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <VBox fx:id="KidsVbox" layoutX="8.0" layoutY="30.0" prefHeight="634.0" prefWidth="850.0">
+               <children>
+                  <TabPane fx:id="kidsTab" prefHeight="634.0" prefWidth="850.0" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab text="Hoodies">
+                           <content>
+                              <AnchorPane fx:id="HoodiePane2" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="608.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="HoodieGridkids" prefHeight="18.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Tees">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="606.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="TeesGridkids" prefHeight="15.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Shirt">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="606.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="JacketGridkids" prefHeight="15.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Jeans">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="607.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="JeansGridkids" prefHeight="18.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="shoes">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="608.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="ShoesGridkids" prefHeight="18.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Watches">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="608.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="WatchGridkids" prefHeight="18.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="homeLivingPane" layoutX="370.0" prefHeight="670.0" prefWidth="866.0" visible="false">
+         <children>
+            <Text layoutX="14.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home&amp;Living">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <VBox fx:id="HomeLivingVbox" layoutX="8.0" layoutY="28.0" prefHeight="634.0" prefWidth="850.0">
+               <children>
+                  <TabPane fx:id="HomeLivingTab" prefHeight="634.0" prefWidth="850.0" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab text="Chair">
+                           <content>
+                              <AnchorPane fx:id="HoodiePane21" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="608.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="chairGrid" prefHeight="18.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Sofas">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="606.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="SofasGrid" prefHeight="15.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Carpet">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="606.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="CarpetGrid" prefHeight="15.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Dinning">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="607.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="DinnerTableGrid" prefHeight="18.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Lamp">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="608.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="LampsGrid" prefHeight="18.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Side Table">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="608.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="SideTableGrid" prefHeight="18.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="AccessoriePane" layoutX="370.0" prefHeight="670.0" prefWidth="866.0" visible="false">
+         <children>
+            <Text layoutX="14.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accessories">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <VBox fx:id="AccessoriesVbox" layoutX="8.0" layoutY="28.0" prefHeight="634.0" prefWidth="850.0">
+               <children>
+                  <TabPane fx:id="AccessoriesTab" prefHeight="634.0" prefWidth="850.0" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab text="Makeup">
+                           <content>
+                              <AnchorPane fx:id="HoodiePane22" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="608.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="MakeupGrid" prefHeight="18.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Skin Care">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="606.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="SkincareGrid" prefHeight="15.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Hair Care">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="606.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="HaircareGrid" prefHeight="15.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Smart Wearables">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="607.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="SmartWearablesGrid" prefHeight="18.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Fragrances">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="608.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="Fragrances" prefHeight="18.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Appliances">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="608.0" prefWidth="850.0">
+                                       <content>
+                                          <GridPane fx:id="Appliances" prefHeight="18.0" prefWidth="0.0">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="AddtoCartPane" layoutX="-2.0" layoutY="-1.0" prefHeight="662.0" prefWidth="1238.0" style="-fx-background-color: linear-gradient(to right bottom, #45aacb, #009cd8, #008ae3, #0075e7, #4059e0);" visible="false">
+         <children>
+            <AnchorPane opacity="0.75" prefHeight="675.0" prefWidth="410.0" style="-fx-background-color: #ffff;" stylesheets="@style1.css">
+               <children>
+                  <Button fx:id="BackButton" layoutX="43.0" layoutY="128.0" mnemonicParsing="false" onAction="#addtocartButtonAction" prefHeight="42.0" prefWidth="62.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image2/icons8-back-52.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Text layoutX="57.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your cart feels light!!" wrappingWidth="295.29376220703125">
+                     <font>
+                        <Font name="Century Schoolbook" size="30.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="deleteitemButton" layoutX="142.0" layoutY="562.0" mnemonicParsing="false" onAction="#deletebuttonAction" style="-fx-background-color: transparent;" stylesheets="@style1.css" text="Delete Item">
+                     <font>
+                        <Font name="Bell MT" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="refreshCart" layoutX="138.0" layoutY="622.0" mnemonicParsing="false" onAction="#RefreshButtonAction" style="-fx-background-color: transparent;" stylesheets="@style1.css" text="Refresh Cart">
+                     <font>
+                        <Font name="Bell MT" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="410.0" prefHeight="670.0" prefWidth="827.0" style="-fx-background-color: white;">
+               <children>
+                  <TableView fx:id="tablecart" layoutX="18.0" layoutY="66.0" prefHeight="416.0" prefWidth="754.0">
+                    <columns>
+                      <TableColumn fx:id="id" prefWidth="75.0" text="Id" />
+                      <TableColumn fx:id="prodDetails" prefWidth="307.20001220703125" text="Prod Details" />
+                        <TableColumn fx:id="ProductBrand" minWidth="0.0" prefWidth="171.199951171875" text="Product Brand" />
+                        <TableColumn fx:id="productPrice" prefWidth="100.00006103515625" text="Product Price" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="PlaceorderButton" layoutX="375.0" layoutY="621.0" mnemonicParsing="false" text="Place Order" />
+                  <Label fx:id="placeorderLabel" layoutX="191.0" layoutY="14.0" prefHeight="42.0" prefWidth="492.0" text="Your order has been placed Happy Shopping!!" textFill="#1d67ef">
+                     <font>
+                        <Font name="Constantia Italic" size="25.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="ContinuShoppingButton" layoutX="648.0" layoutY="621.0" mnemonicParsing="false" onAction="#addtocartButtonAction" text="Continue Shopping !" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

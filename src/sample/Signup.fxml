@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="SignupPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0" prefWidth="904.0" style="-fx-background-color: white;" stylesheets="@style1.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignupController">
+   <children>
+      <ImageView fitHeight="623.0" fitWidth="404.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="438.0" layoutY="184.0" prefHeight="23.0" prefWidth="84.0" text="First Name">
+         <font>
+            <Font name="Goudy Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="438.0" layoutY="234.0" prefHeight="23.0" prefWidth="84.0" text="Last Name">
+         <font>
+            <Font name="Goudy Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="438.0" layoutY="289.0" prefHeight="23.0" prefWidth="84.0" text="Username">
+         <font>
+            <Font name="Goudy Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="438.0" layoutY="346.0" prefHeight="23.0" prefWidth="84.0" text="Password">
+         <font>
+            <Font name="Goudy Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="438.0" layoutY="400.0" prefHeight="23.0" prefWidth="138.0" text="Confirm Password">
+         <font>
+            <Font name="Goudy Old Style" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firstnameTF" layoutX="588.0" layoutY="177.0" prefHeight="26.0" prefWidth="265.0" promptText="First Name" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #cf967a;">
+         <font>
+            <Font name="Goudy Old Style" size="18.0" />
+         </font></TextField>
+      <TextField fx:id="lastnameTF" layoutX="587.0" layoutY="227.0" prefHeight="26.0" prefWidth="265.0" promptText="Last Name" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #cf967a;">
+         <font>
+            <Font name="Goudy Old Style" size="18.0" />
+         </font></TextField>
+      <TextField fx:id="usernameTF" layoutX="587.0" layoutY="280.0" prefHeight="26.0" prefWidth="265.0" promptText="Username e.g keanu8" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #cf967a;">
+         <font>
+            <Font name="Goudy Old Style" size="18.0" />
+         </font></TextField>
+      <PasswordField fx:id="passwordTF" layoutX="588.0" layoutY="339.0" prefHeight="26.0" prefWidth="266.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #cf967a;">
+         <font>
+            <Font name="Goudy Old Style" size="18.0" />
+         </font></PasswordField>
+      <PasswordField fx:id="confirmPassTF" layoutX="588.0" layoutY="393.0" prefHeight="26.0" prefWidth="266.0" promptText="Confirm Password" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #cf967a;">
+         <font>
+            <Font name="Goudy Old Style" size="18.0" />
+         </font></PasswordField>
+      <Button fx:id="signupFrameButton" layoutX="628.0" layoutY="475.0" mnemonicParsing="false" onAction="#signupFrameButtonOnAction" prefHeight="38.0" prefWidth="84.0" style="-fx-background-color: transparent;" styleClass="SignUp" text="Sign up" textFill="#cf967a">
+         <font>
+            <Font name="Goudy Old Style" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="GobackButton" layoutX="815.0" layoutY="554.0" mnemonicParsing="false" onAction="#GobackButtonOnAction" style="-fx-background-color: transparent;" styleClass="Cancel" text="Cancel" textFill="#cf967a">
+         <font>
+            <Font name="Goudy Old Style" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="passwordMatchLabel" layoutX="605.0" layoutY="436.0" prefHeight="18.0" prefWidth="138.0" textFill="RED" />
+      <Label fx:id="signupmessageLabel" layoutX="574.0" layoutY="106.0" prefHeight="18.0" prefWidth="197.0" textFill="#2bcf49" />
+      <Text layoutX="18.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OCA">
+         <font>
+            <Font name="Goudy Old Style" size="170.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="568.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Goudy Old Style" size="18.0" />
+         </font>
+      </Text>
+      <Label alignment="CENTER" layoutX="60.0" layoutY="580.0" prefHeight="20.0" prefWidth="66.0" style="-fx-border-radius: 20; -fx-border-color: black;" text="Est. 2021">
+         <font>
+            <Font name="Goudy Old Style" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="passwordLabel" layoutX="639.0" layoutY="454.0" prefHeight="18.0" prefWidth="66.0" textFill="#40d16e" />
+      <Label alignment="CENTER" layoutX="-16.0" layoutY="549.0" prefHeight="25.0" prefWidth="218.0" text="Your one stop Fashion Store">
+         <font>
+            <Font name="Goudy Old Style" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="507.0" text="SIGN UP">
+         <font>
+            <Font name="High Tower Text" size="70.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

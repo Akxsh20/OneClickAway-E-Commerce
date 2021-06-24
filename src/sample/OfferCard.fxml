@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="box" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="400.0" spacing="15.0" style="-fx-background-radius: 15;" styleClass="shadow" stylesheets="@style1.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.OfferCardController">
+   <children>
+      <ImageView fx:id="Clotheimage" fitHeight="154.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image2/MenGray.png" />
+         </image></ImageView>
+      <VBox alignment="CENTER_LEFT" prefHeight="180.0" prefWidth="245.0">
+         <children>
+            <Label fx:id="ClotheType" prefHeight="43.0" prefWidth="252.0" text=" Grey Woolen OverCoat">
+               <font>
+                  <Font name="Bernard MT Condensed" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="Brand" layoutX="10.0" layoutY="23.0" prefHeight="43.0" prefWidth="248.0" text=" By H&amp;M">
+               <font>
+                  <Font name="Bernard MT Condensed" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="31.0" fitWidth="154.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image2/star5.png" />
+               </image>
+            </ImageView>
+         </children></VBox>
+   </children>
+</HBox>
